@@ -1,0 +1,8 @@
+<p>phone-number works!</p>
+<div *ngFor="let item of objectKeys(phoneNums)">
+    <div>
+        <input type="text" name='{{item}}' (keydown)="handleInput($event)"/>
+        <button (click)="handleDelete(item)">Delete</button>
+    </div>
+</div>
+<button (click)="addMoreInp()">Add another phone number</button> 
